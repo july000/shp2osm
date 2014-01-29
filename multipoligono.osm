@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version='0.6' upload='true' generator='JOSM'>
+  <node id='-839562' action='modify' visible='true' lat='37.771499326918345' lon='-122.51048436371207' />
+  <node id='-839561' action='modify' visible='true' lat='37.771519636480974' lon='-122.50991397119405' />
+  <node id='-839560' action='modify' visible='true' lat='37.77170223476031' lon='-122.50992437673295' />
+  <node id='-839559' action='modify' visible='true' lat='37.771681925247826' lon='-122.510494769251' />
+  <node id='-839557' action='modify' visible='true' lat='37.77138356929593' lon='-122.5107260075752' />
+  <node id='-839556' action='modify' visible='true' lat='37.77142012656185' lon='-122.50975993736458' />
+  <node id='-839555' action='modify' visible='true' lat='37.7718444011913' lon='-122.50978563260699' />
+  <node id='-839554' action='modify' visible='true' lat='37.771807844135154' lon='-122.51075170281763' />
+  <way id='-839563' action='modify' visible='true'>
+    <nd ref='-839559' />
+    <nd ref='-839560' />
+    <nd ref='-839561' />
+    <nd ref='-839562' />
+    <nd ref='-839559' />
+  </way>
+  <way id='-839558' action='modify' visible='true'>
+    <nd ref='-839554' />
+    <nd ref='-839555' />
+    <nd ref='-839556' />
+    <nd ref='-839557' />
+    <nd ref='-839554' />
+  </way>
+  <relation id='-839564' action='modify' visible='true'>
+    <member type='way' ref='-839558' role='outer' />
+    <member type='way' ref='-839563' role='inner' />
+    <tag k='building' v='yes' />
+    <tag k='type' v='multipolygon' />
+  </relation>
+</osm>

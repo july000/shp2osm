@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version='0.6' upload='true' generator='JOSM'>
+  <node id='-101478' action='modify' visible='true' lat='37.76364065268259' lon='-122.48127628058654' />
+  <node id='-101477' action='modify' visible='true' lat='37.76365482968203' lon='-122.48107249392454' />
+  <node id='-101476' action='modify' visible='true' lat='37.76375247726667' lon='-122.48108336365092' />
+  <node id='-101475' action='modify' visible='true' lat='37.76373830028595' lon='-122.48128715031292' />
+  <node id='-101468' action='modify' visible='true' lat='37.76377356916971' lon='-122.48129191792056' />
+  <node id='-101467' action='modify' visible='true' lat='37.76377693334256' lon='-122.48116330595313' />
+  <node id='-101460' action='modify' visible='true' lat='37.7638811751777' lon='-122.48116806503154' />
+  <node id='-101458' action='modify' visible='true' lat='37.76393699678831' lon='-122.48117039971635' />
+  <node id='-101456' action='modify' visible='true' lat='37.7638778188784' lon='-122.4812962812879' />
+  <node id='-101455' action='modify' visible='true' lat='37.76393819713397' lon='-122.48112454446449' />
+  <node id='-101454' action='modify' visible='true' lat='37.76398289373707' lon='-122.48112641662688' />
+  <node id='-101453' action='modify' visible='true' lat='37.7639783370974' lon='-122.48130048813509' />
+  <way id='-101479' action='modify' visible='true'>
+    <nd ref='-101475' />
+    <nd ref='-101476' />
+    <nd ref='-101477' />
+    <nd ref='-101478' />
+    <nd ref='-101475' />
+    <tag k='building' v='yes' />
+  </way>
+  <way id='-101469' action='modify' visible='true'>
+    <nd ref='-101456' />
+    <nd ref='-101460' />
+    <nd ref='-101467' />
+    <nd ref='-101468' />
+    <nd ref='-101456' />
+    <tag k='building' v='yes' />
+  </way>
+  <way id='-101457' action='modify' visible='true'>
+    <nd ref='-101453' />
+    <nd ref='-101454' />
+    <nd ref='-101455' />
+    <nd ref='-101458' />
+    <nd ref='-101460' />
+    <nd ref='-101456' />
+    <nd ref='-101453' />
+    <tag k='building' v='yes' />
+  </way>
+</osm>
