@@ -4,7 +4,7 @@ import json
 from lxml import etree
 from xml.etree.ElementTree import Element, SubElement, Comment, tostring
 # read the shapefile
-sf = shapefile.Reader("shp/test_multipoligon.shp")
+sf = shapefile.Reader("shp/for_edit.shp")
 osm = etree.Element("osm",version='0.6', upload='true', generator='JOSM')
 
 
