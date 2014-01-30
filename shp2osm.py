@@ -25,6 +25,7 @@ for x in xrange(0,len(sf.shapeRecords())):
   way.set('id', str(id_node))
   way.set('action','modify')
   way.set('visible','true')
+  
   for y in xrange(0,len(shapes[x].points)):
     node = etree.SubElement(osm, "node")
     nd=etree.SubElement(way, "nd")       

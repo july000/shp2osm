@@ -6,32 +6,8 @@ from xml.etree.ElementTree import Element, SubElement, Comment, tostring
 import fiona
 
 osm = etree.Element("osm",version='0.6', upload='true', generator='JOSM')
-
-def polygono(f,id_node):
-	way = etree.SubElement(osm, "way")
-  	way.set('id', str(id_node))
-  	way.set('action','modify')
-  	way.set('visible','true')
-  	tag=etree.SubElement(way, 'tag')
-	tag.set('k','building')
-	tag.set('v','yes')
-
-	for x in xrange(0,len(f['geometry']['coordinates'][0])):
-  		#print x
-  		print len(f['geometry']['coordinates'][0])
-  		id_node=id_node+1*(-1)
-  		print id_node
-  		node = etree.SubElement(osm, "node")  
-  		nd=etree.SubElement(way, "nd")  		  
-    	node.set('id',str(id_node))
-    	nd.set("ref", str(id_node))
-
-    	node.set('action','modify')
-    	node.set('visible','true')
-    	node.set('lat',str(f['geometry']['coordinates'][0][x][1]))
-    	node.set('lon',str(f['geometry']['coordinates'][0][x][0]))
-    	
-source = fiona.open('shp/for_edit.shp', 'r') #test_multipoligon #sf3_wgs84_reduce
+   	
+source = fiona.open('shp/test_multipoligon.shp', 'r') #test_multipoligon #sf3_wgs84_reduce
 	#print source.schema
 print 'Length of source  %d' % (len(source))
 id_node=0
@@ -73,8 +49,7 @@ for f in source:
 		tag1.set('k','building')
 		tag1.set('v','yes')
 		tag2.set('k','type')
-		tag2.set('v','multipolygon')		
-
+		tag2.set('v','multipolygon')
 		#print 'y cordenadas %d' % (len(f['geometry']['coordinates'][0]))
 		num_cordenadas=[]
 		id_way=[]
@@ -100,11 +75,11 @@ for f in source:
 				node.set('lat',str(f['geometry']['coordinates'][x][y][1]))
 				node.set('lon',str(f['geometry']['coordinates'][x][y][0]))
 
-			print num_cordenadas
-			print id_way	
-			print num_cordenadas.index(max(num_cordenadas))
-			member.set('role','outer')
-			member.set('role','inner')
+			#print num_cordenadas
+			#print id_way	
+			#print num_cordenadas.index(max(num_cordenadas))
+			#member.set('role','outer')
+			#member.set('role','inner')
 
 			#print len(f['geometry']['coordinates'][0][x])
 
